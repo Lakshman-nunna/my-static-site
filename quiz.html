@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> <center> Space Quiz </center></title>
+
+    <style>
+        body {
+            background-color: #0c0c0c; 
+            color: #ffffff;}
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #007bff;
+            color: #ffffff; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Space Quiz</h1>
+
+    <div id="quiz">
+        <div class="question">
+            <h2>1. What is the closest planet to the Sun?</h2>
+            <button class="answer incorrect">Venus</button>
+            <button class="answer correct">Mercury</button>
+            <button class="answer incorrect">Earth</button>
+            <button class="answer incorrect">Mars</button>
+        </div>
+
+        <div class="question">
+            <h2>2. What is the largest planet in our solar system?</h2>
+            <button class="answer incorrect">Earth</button>
+            <button class="answer incorrect">Mars</button>
+            <button class="answer incorrect">Mercury</button>
+            <button class="answer correct">Jupiter</button>
+        </div>
+
+        <div class="question">
+            <h2>3. Who was the first person to walk on the Moon?</h2>
+            <button class="answer correct">Neil Armstrong</button>
+            <button class="answer incorrect">Buzz Aldrin</button>
+            <button class="answer incorrect">Yuri Gagarin</button>
+            <button class="answer incorrect">Alan Shepard</button>
+        </div>
+
+        <div class="question">
+            <h2>4. What is the name of the closest galaxy to the Milky Way?</h2>
+            <button class="answer correct">Andromeda</button>
+            <button class="answer incorrect">Orion</button>
+            <button class="answer incorrect">Triangulum</button>
+            <button class="answer incorrect">Centaurus A</button>
+        </div>
+
+        <div class="question">
+            <h2>5. What is the name of the largest moon of Saturn?</h2>
+            <button class="answer incorrect">Europa</button>
+            <button class="answer incorrect">Io</button>
+            <button class="answer correct">Titan</button>
+            <button class="answer incorrect">Ganymede</button>
+        </div>
+
+        <div class="question">
+            <h2>6. What is the name of the first artificial satellite launched into space?</h2>
+            <button class="answer correct">Sputnik 1</button>
+            <button class="answer incorrect">Vostok 1</button>
+            <button class="answer incorrect">Explorer 1</button>
+            <button class="answer incorrect">Telstar 1</button>
+        </div>
+
+        <div class="question">
+            <h2>7. What is the term for a massive star that has exploded and collapsed into a super-dense core?</h2>
+            <button class="answer incorrect">Nebula</button>
+            <button class="answer incorrect">Quasar</button>
+            <button class="answer correct">Black hole</button>
+            <button class="answer incorrect">Supernova</button>
+        </div>
+
+        <div class="question">
+            <h2>8. Which planet is known as the "Red Planet"?</h2>
+            <button class="answer incorrect">Venus</button>
+            <button class="answer correct">Mars</button>
+            <button class="answer incorrect">Jupiter</button>
+            <button class="answer incorrect">Saturn</button>
+        </div>
+
+        <div class="question">
+            <h2>9. What is the name of the largest volcano in the solar system, located on Mars?</h2>
+            <button class="answer incorrect">Mount Vesuvius</button>
+            <button class="answer incorrect">Mount St. Helens</button>
+            <button class="answer incorrect">Mount Fuji</button>
+            <button class="answer correct">Olympus Mons</button>
+        </div>
+
+        <div class="question">
+            <h2>10. What is the name of the spacecraft that carried the first humans to land on the Moon?</h2>
+            <button class="answer incorrect">Apollo 11</button>
+            <button class="answer incorrect">Apollo 13</button>
+            <button class="answer correct">Apollo 11</button>
+            <button class="answer incorrect">Apollo 14</button>
+        </div>
+    </div>
+
+
+    <script>
+        const correctButtons = document.querySelectorAll('.correct');
+        const incorrectButtons = document.querySelectorAll('.incorrect');
+
+        correctButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                alert('Correct!');
+            });
+        });
+
+        incorrectButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                alert('Incorrect choice.');
+            });
+        });
+    </script>
+</body>
+
+<footer>&copy; All rights reserved.</footer>
+
+
+</html>
+
+
